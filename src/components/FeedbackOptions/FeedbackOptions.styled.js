@@ -1,6 +1,5 @@
 import styled from '@emotion/styled';
 
-
 export const FeedbackBtn = styled('button')`
   padding: 10px;
   background-color: grey;
@@ -12,4 +11,4 @@ export const FeedbackBtn = styled('button')`
   &:hover {
     background-color: darkblue;
   }
-`
+`;

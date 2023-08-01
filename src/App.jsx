@@ -1,5 +1,5 @@
-import { FeedbackOptions } from 'components/FeedbackOptions/FeedbackOptions';
-import { Container } from 'components/Container/Container';
+import { FeedbackOptions } from './components/FeedbackOptions/FeedbackOptions';
+import { Container } from './components/Container/Container';
 import { Statistics } from './components/Statistics/Statistics';
 import { Section } from './components/Section/Section'
 import { Notification } from './components/Notification/Notification'
@@ -33,13 +33,12 @@ export class App extends Component {
 
   render() {
     const { good, neutral, bad } = this.state;
-    const options = ['Good', 'Neutral', 'Bad'];
     const totalFeedback = this.countTotalFeedback();
     return (
       <Container>
     <Section title="Please leave feedback">
           <FeedbackOptions
-            options={options}
+            options={Object.keys(this.state)}
             onLeaveFeedback={this.handleLeaveFeedback}
           />
         </Section>
@@ -58,5 +57,4 @@ export class App extends Component {
       </Container>
     );
   }
-
 }

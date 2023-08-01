@@ -1,10 +1,10 @@
+import { StatisticsContainer } from './Container.styled';
+import PropTypes from 'prop-types';
 
-import { StatisticsContainer } from "./Container.styled";
+export const Container = props => (
+  <StatisticsContainer>{props.children}</StatisticsContainer>
+);
 
-
-export const Container  = (props) => (
-    <StatisticsContainer>
-    {props.children}
-  </StatisticsContainer>
-
-)
+Container.propTypes = {
+  children: PropTypes.node.isRequired,
+};
