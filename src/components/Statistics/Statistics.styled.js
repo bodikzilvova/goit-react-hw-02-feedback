@@ -7,19 +7,22 @@ font-weight: 600;
 `
 export const StatisticsGood = styled.p`
 
-margin-right: auto;
-margin-left: auto;
+font-weight: 500;
 
 `
 export const StatisticsNeutral = styled.p`
-
-margin-right: auto;
-margin-left: auto;
+font-weight: 500;
 
 `
 export const StatisticsBad = styled.p`
+font-weight: 500;
 
-margin-right: auto;
-margin-left: auto;
+`
+export const StatisticsTotal = styled.p`
+font-weight: 500;
+
+`
+export const StatisticsPercentage = styled.p`
+font-weight: 500;
 
 `

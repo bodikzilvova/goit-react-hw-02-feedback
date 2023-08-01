@@ -1,5 +1,5 @@
 
-import { StatisticsContainer} from "./Container.styled";
+import { StatisticsContainer } from "./Container.styled";
 
 
 export const Container  = (props) => (

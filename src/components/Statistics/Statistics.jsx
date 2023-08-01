@@ -1,13 +1,18 @@
 
-import { StatisticsTitle, StatisticsGood, StatisticsNeutral, StatisticsBad } from "./Statistics.styled";
+import { StatisticsGood, StatisticsNeutral, StatisticsBad, StatisticsTotal, StatisticsPercentage} from "./Statistics.styled";
 
-
-export const Statistics = ({ state }) => (
+export const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
+  
+  return (
     <>
-      <StatisticsTitle> Statistics </StatisticsTitle>
-      <StatisticsGood> Good: {state.good} </StatisticsGood>
-      <StatisticsNeutral> Neutral: {state.neutral} </StatisticsNeutral>
-      <StatisticsBad> Bad: {state.bad} </StatisticsBad>
+      <StatisticsGood> Good: {good} </StatisticsGood>
+      <StatisticsNeutral> Neutral: {neutral} </StatisticsNeutral>
+      <StatisticsBad> Bad: {bad} </StatisticsBad>
+      <StatisticsTotal>Total: {total}</StatisticsTotal>
+      <StatisticsPercentage>Positive feedback: {positivePercentage}%</StatisticsPercentage>
     </>
   );
-    
+};
+
+
+      
